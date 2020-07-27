@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style type="text/css">
+    .body{
+        background-color: rgb(255, 255, 255);
+    }
+    .container {
+         border-radius: 5px;
+         background-color: #f2f2f2;
+         padding: 30px;
+         margin: 50px;
+    }
+    .header {text-align: center;
+
+    }
+   
+    input{
+        width: 100%;
+        margin: 10px 0;
+        box-sizing: border-box;
+        padding: 6px;
+    }
+    
+    select{
+        width: 100%;
+        margin: 10px 0;
+        box-sizing: border-box;
+        padding: 6px;
+    }
+
+    .col-75 {
+        width: 100%;
+        margin: 10px 0;
+        box-sizing: border-box;
+        padding: 6px;
+    }
+    
+    textarea {
+        width: 100%;
+        resize: vertical;
+        height: 200px;
+        padding: 12px 4px;
+    }
+
+    button[type=submit]{
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        float: left;
+    }
+
+
+
+     </style>
+</head>
+<body>
+<h2 class="header">Contact Form</h2>
+ <div>
+   <form class="container">
+    <div>
+        <label>First Name</label><br>
+
+        <input type="text" name="name" placeholder="Your name.." required>
+    </div><br>
+
+    <div>
+        <label>Last Name</label><br>
+
+        <input type="name" name="name" placeholder="Your last name.." required>
+    </div><br>
+
+    <div>
+        <label for="country">Country</label><br>
+        <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="Ghana">Ghana</option>
+        <option value="Rwanda">Rwanda</option>
+      </select>
+    </div><br>
+
+    <div class="row">
+    <div>
+      <label for="subject">Subject</label>
+    </div>
+    <div class="col-75">
+      <textarea type="subject" name="subject" placeholder="Write something"></textarea>
+    </div>
+  </div>
+  <br> 
+
+
+   <div>
+        <button type="submit">Submit</button>
+    </div><br>
+    <br>
+
+  </form>
+ </div>
+
+</body>
+</html>
